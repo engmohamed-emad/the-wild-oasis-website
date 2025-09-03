@@ -3,7 +3,7 @@ import {auth} from "@/app/_lib/auth";
 import Image from "next/image";
 export default async function Navigation() {
   const session = await auth();
-  console.log(session);
+  // console.log(session);
   return (
     <nav className="z-10 text-xl">
       <ul className="flex gap-16 items-center">
