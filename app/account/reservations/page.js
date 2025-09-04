@@ -1,7 +1,7 @@
-import ReservationCard from "@/app/_components/ReservationCard";
 import { getBookings } from "@/app/_lib/data-service";
 import Link from "next/link";
 import {auth} from "@/app/_lib/auth";
+import ReservationList from "@/app/_components/ReservationList";
 export const metadata = {
   title: "Your reservations",
   description: "Manage your reservations and bookings.",
@@ -24,13 +24,9 @@ export default async function ReservationsPage() {
             luxury cabins &rarr;
           </Link>
         </p>
-      ) : (
-        <ul className="space-y-6">
-          {bookings.map((booking) => (
-            <ReservationCard booking={booking} key={booking.id} />
-          ))}
-        </ul>
-      )}
+      ) : 
+      <ReservationList bookings={bookings} />
+        }
     </div>
   );
 }
