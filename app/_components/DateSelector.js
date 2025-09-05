@@ -19,8 +19,9 @@ function DateSelector({ settings, bookedDates, cabin }) {
 
   const { range, setRange, resetRange } = useReservation();
   // CHANGE
+  const displayedRange = isAlreadyBooked(range, bookedDates)? {} : range;
   const { regularPrice, discount } = cabin;
-  const numNights = differenceInDays(range.to,range.from);
+  const numNights = differenceInDays(displayedRange.to,displayedRange.from);
   const cabinPrice = numNights* (regularPrice-discount);
 
   // SETTINGS
@@ -32,7 +33,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
       <DayPicker
         className="pt-12 place-self-center"
         mode="range"
-        selected={range}
+        selected={displayedRange}
         onSelect={setRange}
         min={minBookingLength + 1}
         max={maxBookingLength}
@@ -41,7 +42,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
         toYear={new Date().getFullYear() + 5}
         captionLayout="dropdown"
         numberOfMonths={2}
-        disabled={(curDate)=>isPast(curDate) || bookedDates.some(date=>isSameDay(date,curDate))}
+        disabled={(curDate)=>isPast(curDate) || bookedDates.some((date)=>isSameDay(date,curDate))}
       />
 
       <div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]">
