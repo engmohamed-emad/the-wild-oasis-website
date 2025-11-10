@@ -7,13 +7,17 @@ Toy can try it from here : https://the-wild-oasis-website-sooty-seven.vercel.app
 
 - **Cabin Listings:** Browse all available cabins with detailed descriptions and photos.
 - **Advanced Filtering:** Filter cabins by capacity (small, medium, large).
+
 ![Cabins screenshot](photos/cabins.png)
 - **Cabin Details:** View amenities, pricing, and availability for each cabin.
 - **Reservation System:** Select dates, number of guests, and make reservations.
+
 ![Cabin screenshot](photos/cabin.png)
 - **User Authentication:** Sign in with Google to access your guest area.
+
 ![Auth](photos/auth.png)
 - **Profile Management:** Update your guest profile and nationality.
+
 ![Profile](photos/profile.png)
 - **Reservation Management:** View, edit, and delete your reservations.
 - **Optimistic UI:** Fast, responsive updates for reservation actions.
