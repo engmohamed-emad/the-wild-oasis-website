@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Wild Oasis
+
+Welcome to **The Wild Oasis** – a serene getaway in nature, built with [Next.js](https://nextjs.org). This project is a full-featured web application for booking luxury cabins in the heart of the Italian Dolomites.
+
+## Features
+
+- **Cabin Listings:** Browse all available cabins with detailed descriptions and photos.
+- **Advanced Filtering:** Filter cabins by capacity (small, medium, large).
+- **Cabin Details:** View amenities, pricing, and availability for each cabin.
+- **Reservation System:** Select dates, number of guests, and make reservations.
+- **User Authentication:** Sign in with Google to access your guest area.
+- **Profile Management:** Update your guest profile and nationality.
+- **Reservation Management:** View, edit, and delete your reservations.
+- **Optimistic UI:** Fast, responsive updates for reservation actions.
+- **Loading & Error States:** Friendly spinners and error messages for smooth UX.
+- **Family Story:** Learn about the family behind The Wild Oasis on the About page.
+- **Responsive Design:** Beautiful on desktop and mobile.
+
+## Screenshots
+
+Explore the `photos/` folder for thorough screenshots and images of the cabins, UI, and features.
 
 ## Getting Started
 
@@ -14,23 +34,33 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` – Main Next.js app directory (pages, components, styles)
+- `photos/` – Screenshots and cabin images
+- `public/` – Static assets
+- `starter/` – Starter code and legacy components
+
+## Technologies
+
+- Next.js 15
+- React 19
+- Supabase (database & auth)
+- Tailwind CSS
+- date-fns
+- NextAuth.js
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy easily on [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enjoy your stay at The Wild Oasis!
