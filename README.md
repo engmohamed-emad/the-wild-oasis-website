@@ -2,7 +2,7 @@
 
 Welcome to **The Wild Oasis** – a serene getaway in nature, built with [Next.js](https://nextjs.org). This project is a full-featured web application for booking luxury cabins in the heart of the Italian Dolomites.
 
-Toy can try it from here : https://the-wild-oasis-website-sooty-seven.vercel.app/
+You can try it from here : https://the-wild-oasis-website-sooty-seven.vercel.app/
 ## Features
 
 - **Cabin Listings:** Browse all available cabins with detailed descriptions and photos.
